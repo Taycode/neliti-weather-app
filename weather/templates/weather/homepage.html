@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="get">
+    <input type="text" name="location">
+    <button type="submit">get weather</button>
+</form>
+{% if weather %}
+    <p>Next Hour: {{ next_hour }}</p>
+    <p>Next 6 Hours: {{ next_6_hours }}</p>
+    <p>Next 12 Hours: {{ next_12_hours }}</p>
+{% endif %}
+</body>
+</html>
